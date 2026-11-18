@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Game Deals</title>
+
+    <link rel="stylesheet" href="style.css"> 
+    <!-- <script src="script.js"></script> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Game Deals</h1>
+            <p>Find the best deals on your favourite games.</p>
+        </header>
+
+        <section class="controls">
+            <div class="search-container">
+                <label for="searchInput">Search games</label>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by title..."
+                >
+            </div>
+
+            <label class="checkbox">
+                <input
+                    type="checkbox"
+                    id="saleOnly"
+                >
+                On sale only
+            </label>
+
+            <button id="cheapestButton">
+                Find Cheapest
+            </button>
+
+            <button
+                id="resetButton"
+                class="reset-button"
+            >
+                Reset
+            </button>
+
+        </section>
+
+        <p id="summary"></p>
+
+        <main
+            id="gameList"
+            class="game-list">
+        </main>
+
+        <p
+            id="noResults"
+            class="no-results">
+            No games found.
+        </p>
+    </div>
+
+</body>
+</html>
